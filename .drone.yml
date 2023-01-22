@@ -32,13 +32,13 @@ steps:
       ssh_key:
         from_secret: ssh_key
       force: true
-  - name: github pages update 
-  image: plugins/downstream
-  settings:
-    server: https://drone.lp76.ru
-    token: 
-      from_secret: drone_token
-    fork: true
+  - name: github-pages-update 
+    image: plugins/downstream
+    settings:
+      server: https://drone.lp76.ru
+      token: 
+        from_secret: drone_token
+      fork: true
     repositories:
       - aleks/site
   - name: rebuild-cache
