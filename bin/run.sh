@@ -3,5 +3,5 @@ set -x
 set -e
 npm install --production
 npm i -g rollup
-npm run dev
+npm run build
 
