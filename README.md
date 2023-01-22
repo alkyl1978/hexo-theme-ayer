@@ -1,13 +1,3 @@
-:ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. [Create an issue](https://github.com/shen-yu/hexo-theme-ayer/issues/new/choose) if you have any queries or advice during the process of using, 
-
-<b>注：收藏本主题请点右上角 Star，谢谢~~ </b>
-<b>如果你想给主题添砖加瓦，可以点右上角 Fork，然后给此仓库提交 PR</b>
-
-### [Preview 预览](https://shen-yu.gitee.io)
-
-### [中文说明](https://shen-yu.gitee.io/2019/ayer/)
-
-### [国内镜像](https://gitee.com/shen-yu/hexo-theme-ayer)
 
 ![Screenshot](screenshots/hexo-theme-ayer.png)
 
@@ -404,30 +394,3 @@ Use Tocbot to parse the title tags (h1~h6) in the content and insert the directo
 
 ---
 
-<br/>
-
-## Code Contributors
-
-This project exists thanks to all the people who contribute.
-
-<a href="https://github.com/Shen-Yu/hexo-theme-ayer/graphs/contributors"><img src="https://opencollective.com/ayer/contributors.svg?width=890&button=false" /></a>
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/Shen-Yu/hexo-theme-ayer.svg)](https://starchart.cc/Shen-Yu/hexo-theme-ayer)
-
-## License
-
-<a src="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a> by <a  href="https://github.com/Shen-Yu">Eric-Shen</a> is licensed under <a rel="license" href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE">SATA-License</a>.
-
-The basic idea is, whenever using a project using SATA license, people shall star/like/+1 that project and thank the author. Just imagine Google stared your project and send you a thank-you letter because they used your project in github!
-<br>
-
-本项目采用<a rel="license" href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE">SATA</a>开源协议，在遵守 MIT 许可证的前提下，你应该马不停蹄的给这个开源项目“点个赞”，比如 github 右上角的 star，然后你应该感谢这个开源项目的作者，作者信息可以在许可证头部的版权声明部分找到。<br>
-
-下面是几条 SATA 作者推荐的感谢途径，也是 SATA 包含的内容：
-
-- 给你使用的开源项目的作者发个 Email，和他交个朋友
-- 提出你在使用过程中发现的 BUG 或者提一些建设性的意见
-- 告诉你的朋友们这是一个多棒的开源项目
-- 当然，你也可以只是在心里默默的感激，不用让全世界都知道
