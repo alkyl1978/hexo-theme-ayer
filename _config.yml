@@ -9,7 +9,7 @@ menu:
 # https://github.com/mattboldt/typed.js
 subtitle:
   enable: true # 是否开启动效
-  text: Привет # 显示的文字
+  text: Привет мальчишки # 显示的文字
   text2: Привет как дела # 滚动播放，如果不需要可以留空
   text3: Привет как делишки # 最多支持三段文字
   startDelay: 0 # 延迟时间
@@ -36,7 +36,7 @@ progressBar: true
 broadcast:
   enable: false # true开启，false关闭
   type: 2 # 1：自定义输入，2：一言api(https://hitokoto.cn/)
-  text: 一个安静优雅的hexo主题，快速且响应式。 # type为1时有效
+  text: енен # type为1时有效
 
 # 文章配置
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
@@ -51,7 +51,7 @@ share_enable: true
 # 国内的社交平台(If you are not in China, maybe you prefer to set:false)
 share_china: false
 # 文章分享文字
-share_text: share
+share_text: Поделится
 
 # 分页文字
 nav_text:
