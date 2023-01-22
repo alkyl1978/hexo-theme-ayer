@@ -9,9 +9,9 @@ menu:
 # https://github.com/mattboldt/typed.js
 subtitle:
   enable: true # 是否开启动效
-  text: 面朝大海，春暖花开 # 显示的文字
-  text2: 愿你一生努力，一生被爱 # 滚动播放，如果不需要可以留空
-  text3: 想要的都拥有，得不到的都释怀 # 最多支持三段文字
+  text: Привет # 显示的文字
+  text2: Привет как дела # 滚动播放，如果不需要可以留空
+  text3: Привет как делишки # 最多支持三段文字
   startDelay: 0 # 延迟时间
   typeSpeed: 200 # 打字速度
   loop: true # 是否循环
@@ -34,13 +34,13 @@ progressBar: true
 
 # 告示板模块
 broadcast:
-  enable: true # true开启，false关闭
+  enable: false # true开启，false关闭
   type: 2 # 1：自定义输入，2：一言api(https://hitokoto.cn/)
   text: 一个安静优雅的hexo主题，快速且响应式。 # type为1时有效
 
 # 文章配置
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
-excerpt_link: 阅读更多...
+excerpt_link: false
 # 如果你嫌每篇文章手动加more标记比较麻烦，又不想在首页全文显示，可以把excerpt_all设置成true，这样首页只会显示文章归档
 excerpt_all: false
 
@@ -49,16 +49,16 @@ copy_btn: true
 # 是否开启文章分享按钮
 share_enable: true
 # 国内的社交平台(If you are not in China, maybe you prefer to set:false)
-share_china: true
+share_china: false
 # 文章分享文字
-share_text: 分享
+share_text: share
 
 # 分页文字
 nav_text:
-  page_prev: 上一页
-  page_next: 下一页
-  post_prev: 上一篇
-  post_next: 下一篇
+  page_prev: Страница назад
+  page_next: Страница вперед
+  post_prev: Предыдущая запись
+  post_next: Следующая запись
 
 # 文章页是否显示目录
 toc: true
@@ -78,7 +78,7 @@ word_count:
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: "请我喝杯咖啡吧~"
+reward_wording: "wording"
 # 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
 alipay: /images/alipay.jpg
 # 微信二维码图片地址
@@ -119,7 +119,7 @@ layout:
 github:
   # (关闭请设置为false)
   enable: true
-  url: https://github.com/Shen-Yu/hexo-theme-ayer
+  url: https://github.com/alkyl1978/hexo-theme-ayer
 
 # 网易云音乐插件
 music:
@@ -131,11 +131,11 @@ music:
 
 # 访问量统计(不蒜子)
 busuanzi:
-  enable: true
+  enable: false
 
 # 友盟cnzz统计(url填js代码src链接)
 cnzz:
-  enable: true
+  enable: false
   url: https://s9.cnzz.com/z_stat.php?id=1278069914&web_id=1278069914
 
 # Google Analytics
@@ -149,18 +149,18 @@ mathjax: false
 # Katex数学公式(allpost设置为false时只有头部设置math:true的文章才开启)
 # 需要更换hexo渲染器，npm un hexo-renderer-marked -S && npm i hexo-renderer-markdown-it-katex -S
 katex:
-  enable: false # true
+  enable: true # true
   allpost: true
   copy_tex: false
 
 # mermaid流程图 三个选项缺一不可(https://mermaid-js.github.io/mermaid/)
 mermaid:
-  enable: false
+  enable: true
   cdn: https://cdn.staticfile.org/mermaid/8.14.0/mermaid.min.js
   theme: forest
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2015
+since: 2023
 
 # ICP备案信息尾部显示
 icp:
@@ -178,14 +178,14 @@ gongan:
 friends_link:
   Ayer主题: #网站名称
     #网站地址
-    url: https://github.com/Shen-Yu/hexo-theme-ayer
+    url: https://github.com/alkyl1978/hexo-theme-ayer
     #网站图片(可忽略不写)
     img: /images/ayer.png
   GitHub:
-    url: https://github.com/Shen-Yu
+    url: https://github.com/alkyl1978
     img: /images/github.png
   码云:
-    url: https://gitee.com/shen-yu
+    url: https://lp76.ru
     img: /images/gitee.png
   Hexo官网:
     url: https://hexo.io
