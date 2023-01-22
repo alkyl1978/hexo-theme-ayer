@@ -1,0 +1,59 @@
+kind: pipeline
+steps:
+  - name: restore-cache
+    image: meltwater/drone-cache:dev
+    environment:
+      AWS_ACCESS_KEY_ID:
+        from_secret: aws_acces
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: aws_key
+    pull: true
+    settings:
+      debug: false
+      cache_key: '{{ arch }}_{{ os }}_{{ checksum "package-lock.json" }}'
+      archive_format: "gzip"
+      endpoint: storage.yandexcloud.net 
+      restore: true
+      bucket: drone-cache
+      region: ru-central1
+      mount: 'node_modules'
+  - name: run-sh
+    image: node:alpine
+    commands: 
+    - chmod +x ./bin/run.sh
+    - ./bin/run.sh
+    - env
+  - name: push commit
+    image: appleboy/drone-git-push
+    settings:
+      remote: ssh://git@github.com:22/alkyl1978/hexo-theme-ayer.git
+      remote_name: github
+      branch: master
+      ssh_key:
+        from_secret: ssh_key
+      force: true
+  - name: rebuild-cache
+    image: meltwater/drone-cache:dev
+    environment:
+      AWS_ACCESS_KEY_ID:
+        from_secret: aws_acces
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: aws_key
+    pull: true
+    settings:
+      debug: false
+      cache_key: '{{ arch }}_{{ os }}_{{ checksum "package-lock.json" }}'
+      archive_format: "gzip"
+      endpoint: storage.yandexcloud.net 
+      rebuild: true
+      bucket: drone-cache
+      region: ru-central1
+      mount: 'node_modules'
+  - name: telegram
+    image: appleboy/drone-telegram
+    settings:
+      token:
+        from_secret: token_telegramm
+      to: 
+        from_secret: to_telegram_user
+      message: #success {{build.status}}
