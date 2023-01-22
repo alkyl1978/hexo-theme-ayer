@@ -38,7 +38,7 @@ steps:
       server: https://drone.lp76.ru
       token: 
         from_secret: drone_token
-      fork: true
+      fork: false
       repositories:
         - aleks/site
   - name: rebuild-cache
