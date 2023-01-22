@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "postinstall": "node ./move_config.js",
     "test": "stylint source-src/css/style.styl -c .stylintrc"
   },
   "source": "source-src/main.js",
